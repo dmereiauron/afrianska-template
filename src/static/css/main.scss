@@ -1,0 +1,82 @@
+// Utils
+@import 'utils/libs';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/reset';
+
+// Elements
+@import 'elements/header';
+@import 'elements/index/title';
+@import 'elements/index/advantages';
+@import 'elements/index/projects';
+@import 'elements/contact/contact';
+@import 'elements/footer';
+
+.header__logo #main-contact {
+  display: none;
+}
+html {
+  font-size: $mainFontSize;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+  padding: 0 15px;
+  @media screen and (max-width: $desktopWidth) {
+    max-width: $tableWidth;
+    padding: 0 15px;
+  }
+  //@media screen and (max-width: $tableWidth) {
+  //  margin: 0 auto;
+  //  padding: 0 15px;
+  //}
+  //@media screen and (max-width: $phoneWidth) {
+  //  margin: 0 auto;
+  //  padding: 0 15px;
+  //}
+}
+
+// Modules:
+// example: @import "modules/my-module.scss";

@@ -1,0 +1,18 @@
+- let index = false
+
+doctype html
+head
+    include ../includes/head
+body
+    if index
+        include ../includes/index-header
+    else
+        include ../includes/main-header
+    main.main
+        include ../includes/contact/contact
+    if index
+        footer.footer
+            include ../includes/index/index-footer
+    else
+        footer.footer
+            include ../includes/main-footer

@@ -1,0 +1,16 @@
+@mixin itemWithBoxShadow {
+  background: #FFFFFF;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+}
+
+@mixin sectionTitle {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: $black;
+  padding-top: 64px;
+  text-align: center;
+}
+

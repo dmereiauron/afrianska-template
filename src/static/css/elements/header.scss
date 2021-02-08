@@ -1,0 +1,14 @@
+.header {
+  margin-top: 39px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .header {
+    padding-bottom: 36px;
+  }
+}

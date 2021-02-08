@@ -1,0 +1,17 @@
+- let index = true
+
+doctype html
+head
+  include ../includes/head.pug
+body
+  include ../includes/index-header
+  main.main
+    include ../includes/index/title.pug
+    include ../includes/index/advantages.pug
+    include ../includes/index/projects.pug
+  if index
+    footer.footer
+      include ../includes/index/index-footer.pug
+  else
+    footer.footer
+      include ../includes/main-footer.pug
